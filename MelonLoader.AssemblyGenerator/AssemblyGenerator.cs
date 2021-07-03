@@ -139,7 +139,7 @@ namespace MelonLoader.AssemblyGenerator
                 string subver = unityVersion.Substring(0, unityVersion.LastIndexOf("."));
                 try
                 {
-                    JsonArray data = (JsonArray)JsonValue.Parse(Program.webClient.DownloadString("https://api.github.com/repos/HerpDerpinstine/MelonLoader/contents/BaseLibs/UnityDependencies")).AsJsonArray;
+                    JsonArray data = (JsonArray)JsonValue.Parse(Program.webClient.DownloadString("https://api.github.com/repos/lillyiu0516/MelonLoader/contents/BaseLibs/UnityDependencies")).AsJsonArray;
                     if (data.Count > 0)
                     {
                         List<string> versionlist = new List<string>();
